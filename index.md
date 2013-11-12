@@ -10,20 +10,17 @@ ext_widgets : {rCharts: ["libraries/nvd3"]}
 mode        : selfcontained # {standalone, draft}
 ---
 
-## Poverty indicators
+## Housing indicators
 
-A few indicators related to the cost of housing and affordable housing will be covered here:
-* % of owners paying more than a given share of income for housing, typically 30%
-* Other measures of housing cost or affordability, often combined with other costs
-* Availability of subsidized housing 
+Indicators related to the cost of housing and affordable housing will be covered here, primarily the percent of owners paying more than a given share of income for housing, typically 30 percent of income. Other measures of homeownership and the availability of subsidized housing are also covered. 
 
 ## Data and limitations
 
-The standard measure of affordable housing is the percent of homeowners that pay more than 30 percent of income for housing. In some cases, the threshold is different, allowing for identification of very high-cost housing, or the measure includes renters as well as homeowners. The source for this indicator is the U.S. Census Bureau's American Community Survey, the annual sample survey. 
+The standard measure of affordable housing is the percent of homeowners that pay more than 30 percent of income for housing. In some cases, the threshold is different (50% or 70%), allowing for identification of severe hig cost burdens. The source for this indicator is the U.S. Census Bureau's American Community Survey, the annual sample survey, and the decennial census.  
 
-Two other measures are used occasionally: measures of housing affordability, from either private firms or state agencies, or measures of the stock of affordable (or subsidized) housing, again typically from state agencies (here, the Connecticut Housing Finance Authority). Below are examples for both of these.
+Two other measures are used occasionally: measures of housing affordability, from either state agencies or private firms like Moody's or the Warren Group, or measures of the stock of affordable (or subsidized) housing, again typically from state agencies (here, the Connecticut Housing Finance Authority). Below are examples for both of these.
 
-Limitations for this indicator are the reliance on ACS data which can have high margins of error for small communities and the exclusion of renters, especially in Hartford where only around 26% of homes are owner-occupied. [The new Department of Housing](http://www.ct.gov/doh/site/default.asp) may mean better housing data will be available in the future for Connecticut. 
+Limitations for this indicator are the reliance on ACS data which can have high margins of error for small communities and the exclusion of some individuals from the survey if their housing costs cannot be identified.. [The new Department of Housing](http://www.ct.gov/doh/site/default.asp) may mean better housing data will be available in the future for Connecticut. 
 
 ## What do we already know?
 
@@ -36,29 +33,56 @@ Below are references for some local, regional and national reports that use indi
 * [Sustainable Knowledge Corridor Dashboard](http://www.sustainableknowledgecorridor.org/site/content/how-are-we-doing) includes a section on housing, including the housing cost burden. 
 * [Population Results Working Group](http://www.ct.gov/opm/cwp/view.asp?a=2998&Q=490946) cites the same '30 percent of income' as an indicator to track. 
 * [Opportunities Hartford](http://www.cahs.org/programs-opportunitieshartford.asp) includes the '30 percent of income' indicator within a set of indicators and performance measures. 
-* [Data Haven's Community Well-Being Index](http://www.ctdatahaven.org/communityindex) includes the '30 percent of income' indicator within it's index. 
+* [Data Haven's Community Well-Being Index](http://www.ctdatahaven.org/communityindex) includes the '30 percent of income' indicator within it's index. The report notes that 'Housing cost data do not consider the impact of transportation costs within cities. In some cases, cities with the highest housing costs are actually cheaper to live in than their surrounding suburban areas, because the need for car ownership is reduced.'
 
 ### Other relevant efforts
 
 * [Boston Indicators Project](http://www.bostonindicators.org/) looks at the share of income spent on housing, along with the percent of housing stock that is affordable (via Massachsuetts Department of Housing & Community Development) and a combined housing and transit cost burden (via MassGIS. 
 * [What Matters to Metros](http://www.futurefundneo.org/whatmatters) includes the '30 percent of income' indicator along with a general cost-of-living index from Moody's.
 
-
-
-
 ## Sample results
 
-owner vs. renter rates by town
-
-cost / income by town - map and chart
-
-cost / income by tract - map only
-
-Results go here
+For housing issues, a first check is the rate of renting vs. owning in each town. For the state, Hartford has the lowest rate of owner-occupancy, based on 2006 - 2010 data from the American Community Survey. 
 
 ![plot of chunk unnamed-chunk-1](assets/fig/unnamed-chunk-1.png) 
 
 
-subsidized housing per 1000 - CHFA
+Rural areas tend to have higher home ownership rates throughout the state, not suprisingly. 
 
-foreclosure rates? housing units? 
+![plot of chunk unnamed-chunk-2](assets/fig/unnamed-chunk-2.png) 
+
+
+Data on housing cost burden show the highest cost burdens in Hartford and some of the inner-ring suburbs, and the lowest costs relative to income in outer-ring and rural towns, particularly Suffield and Tolland. 
+
+
+```
+Testing geography item 1: All subdivisions, Hartford County, Connecticut .... OK.
+Testing geography item 2: All subdivisions, Tolland County, Connecticut .... OK.
+```
+
+![plot of chunk unnamed-chunk-3](assets/fig/unnamed-chunk-3.png) 
+
+
+Since the data is from the ACS, the margin of error can be high for small towns. The plot below shows that in practice we can't distinguish the differences between many towns in the region. For instance, housing costs in Bolton appear high if we only look at the estimate, but the margin of error indicates they could be anywhere between the costs for East Hartford and Avon. 
+
+![plot of chunk unnamed-chunk-4](assets/fig/unnamed-chunk-4.png) 
+
+
+Housing cost generally appears to be associated with home-ownership rates; costs are lower in towns with higher home-ownership rates. 
+
+![plot of chunk unnamed-chunk-5](assets/fig/unnamed-chunk-5.png) 
+
+
+Using 5-year estimates of census data, we can also make the same map by census tract, similar to a neighborhood (with a few holes). The high cost areas again tend to be clustered around Hartford, with lower housing cost burdens in rural and affluent areas. 
+
+
+```
+Testing geography item 1: Tract *, Hartford County, Connecticut .... OK.
+Testing geography item 2: Tract *, Tolland County, Connecticut .... OK.
+```
+
+![plot of chunk unnamed-chunk-6](assets/fig/unnamed-chunk-6.png) 
+
+
+While some projects have used data on the number of subsidized housing units (per 1000 residents) for Connecticut, this data is not readily available. It could likely be requested from CHFA if seen as important. 
+
