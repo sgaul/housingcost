@@ -58,12 +58,6 @@ Rural areas tend to have higher home ownership rates throughout the state, not s
 
 Data on housing cost burden show the highest cost burdens in Hartford and some of the inner-ring suburbs, and the lowest costs relative to income in outer-ring and rural towns, particularly Suffield and Tolland. 
 
-
-```
-Testing geography item 1: All subdivisions, Hartford County, Connecticut .... OK.
-Testing geography item 2: All subdivisions, Tolland County, Connecticut .... OK.
-```
-
 ![plot of chunk unnamed-chunk-3](assets/fig/unnamed-chunk-3.png) 
 
 
@@ -78,12 +72,6 @@ Housing cost generally appears to be associated with home-ownership rates; costs
 
 
 Using 5-year estimates of census data, we can also make the same map by census tract, similar to a neighborhood (with a few holes). The high cost areas again tend to be clustered around Hartford, with lower housing cost burdens in rural and affluent areas. 
-
-
-```
-Testing geography item 1: Tract *, Hartford County, Connecticut .... OK.
-Testing geography item 2: Tract *, Tolland County, Connecticut .... OK.
-```
 
 ![plot of chunk unnamed-chunk-6](assets/fig/unnamed-chunk-6.png) 
 
