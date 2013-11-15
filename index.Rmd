@@ -22,6 +22,8 @@ Two other measures are used occasionally: measures of housing affordability, fro
 
 Limitations for this indicator are the reliance on ACS data which can have high margins of error for small communities and the exclusion of some individuals from the survey if their housing costs cannot be identified.. [The new Department of Housing](http://www.ct.gov/doh/site/default.asp) may mean better housing data will be available in the future for Connecticut. 
 
+HUD and the Department of Transportion have also just released the [Location Affordability Index](http://www.locationaffordability.info/lai.aspx) a combined housing cost + transit mapping tool, which providers information by census tract. [Maps of the region](http://locationaffordability.info/lai.aspx?activeHH=a&activeTheme=a&bounds=%5B%5B%22route%22%5D,41.57226259999999,-72.54966200000001%5D) through this tool show the highest cost regions further from the city.
+
 ## What do we already know?
 
 Below are references for some local, regional and national reports that use indicators of affordable housing, with some details on how the data is used. 
@@ -44,7 +46,9 @@ Below are references for some local, regional and national reports that use indi
 
 For housing issues, a first check is the rate of renting vs. owning in each town. For the state, Hartford has the lowest rate of owner-occupancy, based on 2006 - 2010 data from the American Community Survey. 
 
-```{r echo = FALSE, warning = FALSE, message = FALSE, fig.height=17}
+Most of the following results are based on Hartford and Tolland counties, not the CRCOG region, since it is easier to extract ACS data that way. But these could all be modified for any given geography. 
+
+```{r echo = FALSE, warning = FALSE, message = FALSE, fig.height=18}
 library(ggplot2)
 owners <- read.csv('owner-rates.csv')
 owners$Town <- reorder(owners$Town, -owners$Owner.occupied..Percent)
@@ -176,3 +180,4 @@ ggplot(data = choropleth, aes(long, lat, group = group)) +
 
 While some projects have used data on the number of subsidized housing units (per 1000 residents) for Connecticut, this data is not readily available. It could likely be requested from CHFA if seen as important. 
 
+Additional breakouts of housing costs by other demographics (race, age, ethnicity) are available from the Census data.  
