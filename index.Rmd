@@ -80,7 +80,7 @@ ggplot(data = choropleth, aes(long, lat, group = group)) +
   theme_minimal()
 ```
 
-Data on housing cost burden show the highest cost burdens in Hartford and some of the inner-ring suburbs, and the lowest costs relative to income in outer-ring and rural towns, particularly Suffield and Tolland. 
+Data on housing cost burden show the higher populations with high cost burdens in Hartford and some of the inner-ring suburbs, and the lowest costs relative to income in outer-ring and rural towns, particularly Suffield and Tolland. 
 
 ```{r echo = FALSE, warning = FALSE, message = FALSE, fig.width = 10, comment = NA, tidy = F}
 library(acs)
@@ -130,7 +130,7 @@ ggplot(data = housingcost) +
   theme_minimal()
 ```
 
-Housing cost generally appears to be associated with home-ownership rates; costs are lower in towns with higher home-ownership rates. 
+Housing cost burdens are generally associated with home-ownership rates - cost burdens are lower in towns with higher home-ownership rates. 
 
 ```{r echo = FALSE, warning = FALSE, message = FALSE, fig.width = 9}
 owners <- merge(owners, housingcost, by.x = "Town", by.y = "town")
@@ -178,6 +178,40 @@ ggplot(data = choropleth, aes(long, lat, group = group)) +
   theme_minimal()
 ```
 
-While some projects have used data on the number of subsidized housing units (per 1000 residents) for Connecticut, this data is not readily available. It could likely be requested from CHFA if seen as important. 
+While some projects have used data on the number of subsidized housing units (per 1000 residents) for Connecticut, this data is not readily available at a detailed level. It could likely be requested from CHFA if seen as important. 
+
+DECD posts annual data on affordable housing units per town. In the Hartford region, only a few towns - Hartford and some urban periphery towns - have more than 10 percent of units classified as 'affordable.'
+
+```{r echo = FALSE, warning = FALSE, message = FALSE, fig.width = 10, comment = NA, tidy = F}
+appeals <- read.csv('../housingcost/appeals-list-2012.csv')
+
+#appeals <- subset(appeals, appeals$Town %in% levels(towns$Town))
+
+#appeals <- merge(appeals,towns, by = "Town")
+
+appeals <- merge(appeals, subset(gh, period == 2010), by.x = "Town", by.y = "city")
+
+appeals$Town <- reorder(appeals$Town, appeals$Percent.Affordable)
+
+ggplot(data = appeals, aes(x = Percent.Affordable, y = Town)) + 
+  geom_point() + 
+  geom_vline(xintercept = 0.1) + 
+  scale_x_continuous(labels = percent) + 
+  theme_minimal() +
+  labs(x = "% affordable housing units") 
+```
+
+In the region overall, the percent of affordable housing generally tracks poverty rates. 
+
+```{r echo = FALSE, warning = FALSE, message = FALSE, fig.width = 10, comment = NA, tidy = F}
+ggplot(data = appeals, aes(y = Percent.Affordable, x = poppovertyrate / 100)) + 
+#  geom_point() + 
+  geom_text(aes(label = Town)) + 
+  geom_abline(intercept = 0, slope = 1) + 
+  scale_x_log10(labels = percent) + 
+  scale_y_log10(labels = percent) + 
+  theme_minimal() +
+  labs(y = "% affordable housing units (log, 2012)", x = "% living under poverty line (log, 2010)") 
+```
 
 Additional breakouts of housing costs by other demographics (race, age, ethnicity) are available from the Census data.  

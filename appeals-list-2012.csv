@@ -1,0 +1,170 @@
+Type,Town,Total housing units - 2010 census,Governmentally Assisted Units,Tenant Rental Assistance,CHFA/USDA Mortgages,Deed Restricted Units,Total Assisted Units,Percent Affordable
+Exempt,Ansonia,8148,372,699,106,9,1186,0.1456
+Exempt,Bloomfield,9019,584,147,295,0,1026,0.1138
+Exempt,Bridgeport,57012,5604,3498,964,20,10086,0.1769
+Exempt,Bristol,27011,1771,793,1014,0,3578,0.1325
+Exempt,Brooklyn,3235,233,11,80,0,324,0.1002
+Exempt,Danbury,31154,1586,1181,315,192,3274,0.1051
+Exempt,Derby,5849,259,307,63,0,629,0.1075
+Exempt,East Hartford,21328,1577,1024,908,0,3509,0.1645
+Exempt,East Windsor,5045,558,49,100,14,721,0.1429
+Exempt,Enfield,17558,1340,215,546,7,2108,0.1201
+Exempt,Groton,17978,3267,52,337,10,3666,0.2039
+Exempt,Hartford,51822,9415,8390,1440,0,19245,0.3714
+Exempt,Killingly,7592,530,120,309,0,959,0.1263
+Exempt,Manchester,25996,1813,1074,884,36,3807,0.1464
+Exempt,Mansfield,6017,417,153,86,2,658,0.1094
+Exempt,Meriden,25892,1769,1008,1022,11,3810,0.1471
+Exempt,Middletown,21223,2814,987,590,25,4416,0.2081
+Exempt,New Britain,31226,3183,1627,1153,382,6345,0.2032
+Exempt,New Haven,54967,8210,6138,1127,545,16020,0.2914
+Exempt,New London,11840,1672,144,457,83,2356,0.199
+Exempt,Norwalk,35415,2248,947,238,616,4049,0.1143
+Exempt,Norwich,18659,1906,728,518,0,3152,0.1689
+Exempt,Plainfield,6229,378,224,296,0,898,0.1442
+Exempt,Putnam,4299,383,73,133,0,589,0.137
+Exempt,Stafford,5124,178,291,160,0,629,0.1228
+Exempt,Stamford,50573,4618,1605,309,1295,7827,0.1548
+Exempt,Torrington,16761,1082,297,611,17,2007,0.1197
+Exempt,Vernon,13896,1386,533,352,12,2283,0.1643
+Exempt,Waterbury,47991,4870,3149,2256,326,10601,0.2209
+Exempt,West Haven,22446,1024,1503,415,0,2942,0.1311
+Exempt,Winchester,5613,316,269,122,0,707,0.126
+Exempt,Windham,9570,1692,436,448,0,2576,0.2692
+Non-exempt,Andover,1317,24,1,22,0,47,0.0357
+Non-exempt,Ashford,1903,32,2,37,0,71,0.0373
+Non-exempt,Avon,7389,240,7,23,0,270,0.0365
+Non-exempt,Barkhamsted,1589,0,1,12,0,13,0.0082
+Non-exempt,Beacon Falls,2509,0,5,26,0,31,0.0124
+Non-exempt,Berlin,8140,468,29,82,6,585,0.0719
+Non-exempt,Bethany,2044,0,0,1,1,2,0.001
+Non-exempt,Bethel,7310,250,10,57,63,380,0.052
+Non-exempt,Bethlehem,1575,24,1,0,0,25,0.0159
+Non-exempt,Bolton,2015,0,3,16,0,19,0.0094
+Non-exempt,Bozrah,1059,0,4,19,0,23,0.0217
+Non-exempt,Branford,13972,232,50,174,0,456,0.0326
+Non-exempt,Bridgewater,881,0,0,2,0,2,0.0023
+Non-exempt,Brookfield,6562,35,7,42,55,139,0.0212
+Non-exempt,Burlington,3389,28,0,29,0,57,0.0168
+Non-exempt,Canaan,779,25,0,9,1,35,0.0449
+Non-exempt,Canterbury,2043,76,1,40,0,117,0.0573
+Non-exempt,Canton,4339,211,19,55,32,317,0.0731
+Non-exempt,Chaplin,988,0,0,24,0,24,0.0243
+Non-exempt,Cheshire,10424,237,7,70,17,331,0.0318
+Non-exempt,Chester,1923,23,2,10,0,35,0.0182
+Non-exempt,Clinton,6065,84,5,43,0,132,0.0218
+Non-exempt,Colchester,6182,364,31,93,0,488,0.0789
+Non-exempt,Colebrook,722,0,0,7,1,8,0.0111
+Non-exempt,Columbia,2308,24,2,43,0,69,0.0299
+Non-exempt,Cornwall,1007,18,0,2,0,20,0.0199
+Non-exempt,Coventry,5099,104,1,136,20,261,0.0512
+Non-exempt,Cromwell,6001,212,6,199,0,417,0.0695
+Non-exempt,Darien,7074,83,6,1,93,183,0.0259
+Non-exempt,Deep River,2096,26,5,23,0,54,0.0258
+Non-exempt,Durham,2694,33,1,13,0,47,0.0174
+Non-exempt,East Granby,2152,72,4,32,0,108,0.0502
+Non-exempt,East Haddam,4508,73,0,30,1,104,0.0231
+Non-exempt,East Hampton,5485,70,5,76,25,176,0.0321
+Non-exempt,East Haven,12533,421,128,294,0,843,0.0673
+Non-exempt,East Lyme,8458,342,8,80,19,449,0.0531
+Non-exempt,Eastford,793,0,0,19,0,19,0.024
+Non-exempt,Easton,2715,0,0,0,11,11,0.0041
+Non-exempt,Ellington,6665,260,8,83,0,351,0.0527
+Non-exempt,Essex,3261,36,6,9,0,51,0.0156
+Non-exempt,Fairfield,21648,241,181,29,116,567,0.0262
+Non-exempt,Farmington,11106,456,110,117,155,838,0.0755
+Non-exempt,Franklin,771,0,1,16,0,17,0.022
+Non-exempt,Glastonbury,13656,582,47,122,2,753,0.0551
+Non-exempt,Goshen,1664,1,0,5,0,6,0.0036
+Non-exempt,Granby,4360,85,2,42,5,134,0.0307
+Non-exempt,Greenwich,25631,837,421,2,54,1314,0.0513
+Non-exempt,Griswold,5118,136,41,159,0,336,0.0657
+Non-exempt,Guilford,9596,168,6,29,0,203,0.0212
+Non-exempt,Haddam,3504,22,1,15,0,38,0.0108
+Non-exempt,Hamden,25114,684,523,448,4,1659,0.0661
+Non-exempt,Hampton,793,0,0,18,0,18,0.0227
+Non-exempt,Hartland,856,2,0,6,0,8,0.0093
+Non-exempt,Harwinton,2282,23,0,25,0,48,0.021
+Non-exempt,Hebron,3567,59,3,36,0,98,0.0275
+Non-exempt,Kent,1665,48,0,4,0,52,0.0312
+Non-exempt,Killingworth,2598,0,2,5,5,12,0.0046
+Non-exempt,Lebanon,3125,26,4,56,0,86,0.0275
+Non-exempt,Ledyard,5987,32,6,168,0,206,0.0344
+Non-exempt,Lisbon,1730,2,0,43,0,45,0.026
+Non-exempt,Litchfield,3975,140,1,12,29,182,0.0458
+Non-exempt,Lyme,1223,0,0,2,8,10,0.0082
+Non-exempt,Madison,8049,90,1,8,29,128,0.0159
+Non-exempt,Marlborough,2389,24,0,20,0,44,0.0184
+Non-exempt,Middlebury,2892,76,4,12,8,100,0.0346
+Non-exempt,Middlefield,1863,30,1,10,1,42,0.0225
+Non-exempt,Milford,23074,822,277,212,85,1396,0.0605
+Non-exempt,Monroe,6918,35,1,19,1,56,0.0081
+Non-exempt,Montville,7407,81,30,201,0,312,0.0421
+Non-exempt,Morris,1314,20,2,0,0,22,0.0167
+Non-exempt,Naugatuck,13061,492,293,301,0,1086,0.0831
+Non-exempt,New Canaan,7551,140,10,2,31,183,0.0242
+Non-exempt,New Fairfield,5593,0,0,25,13,38,0.0068
+Non-exempt,New Hartford,2923,12,1,38,15,66,0.0226
+Non-exempt,New Milford,11731,233,259,123,16,631,0.0538
+Non-exempt,Newington,13011,426,105,366,36,933,0.0717
+Non-exempt,Newtown,10061,134,2,23,15,174,0.0173
+Non-exempt,Norfolk,967,28,0,3,0,31,0.0321
+Non-exempt,North,5629,62,7,55,0,124,0.022
+Non-exempt,North Canaan,1587,101,0,7,0,108,0.0681
+Non-exempt,North Haven,9491,343,28,74,1,446,0.047
+Non-exempt,North,2306,0,1,21,0,22,0.0095
+Non-exempt,Old Lyme,5021,60,1,7,3,71,0.0141
+Non-exempt,Old Saybrook,5602,50,5,16,1,72,0.0129
+Non-exempt,Orange,5345,46,4,9,0,59,0.011
+Non-exempt,Oxford,4746,36,1,8,0,45,0.0095
+Non-exempt,Plainville,8063,223,25,302,21,571,0.0708
+Non-exempt,Plymouth,5109,179,5,152,0,336,0.0658
+Non-exempt,Pomfret,1684,32,2,17,0,51,0.0303
+Non-exempt,Portland,4077,185,92,51,0,328,0.0805
+Non-exempt,Preston,2019,40,4,36,0,80,0.0396
+Non-exempt,Prospect,3474,0,4,25,0,29,0.0083
+Non-exempt,Redding,3811,0,0,0,0,0,0
+Non-exempt,Ridgefield,9420,179,0,8,33,220,0.0234
+Non-exempt,Rocky Hill,8843,236,29,173,0,438,0.0495
+Non-exempt,Roxbury,1167,19,0,1,0,20,0.0171
+Non-exempt,Salem,1635,1,0,28,0,29,0.0177
+Non-exempt,Salisbury,2593,16,1,5,10,32,0.0123
+Non-exempt,Scotland,680,0,0,11,0,11,0.0162
+Non-exempt,Seymour,6968,262,16,89,0,367,0.0527
+Non-exempt,Sharon,1775,20,0,4,0,24,0.0135
+Non-exempt,Shelton,16146,254,21,83,82,440,0.0273
+Non-exempt,Sherman,1831,0,1,1,0,2,0.0011
+Non-exempt,Simsbury,9123,241,11,58,0,310,0.034
+Non-exempt,Somers,3479,54,7,18,0,79,0.0227
+Non-exempt,South Windsor,10243,427,54,235,0,716,0.0699
+Non-exempt,Southbury,9091,89,2,14,0,105,0.0115
+Non-exempt,Southington,17447,609,42,281,51,983,0.0563
+Non-exempt,Sprague,1248,20,9,31,0,60,0.0481
+Non-exempt,Sterling,1511,0,1,35,0,36,0.0238
+Non-exempt,Stonington,9467,296,17,52,0,365,0.0386
+Non-exempt,Stratford,21091,524,95,259,33,911,0.0432
+Non-exempt,Suffield,5469,212,0,52,15,279,0.051
+Non-exempt,Thomaston,3276,105,4,91,0,200,0.0611
+Non-exempt,Thompson,4171,150,13,83,0,246,0.059
+Non-exempt,Tolland,5451,97,1,79,3,180,0.033
+Non-exempt,Trumbull,13157,315,12,35,314,676,0.0514
+Non-exempt,Union,388,0,0,9,0,9,0.0232
+Non-exempt,Voluntown,1127,20,2,23,0,45,0.0399
+Non-exempt,Wallingford,18945,482,140,298,35,955,0.0504
+Non-exempt,Warren,811,0,0,4,0,4,0.0049
+Non-exempt,Washington,2124,14,0,0,23,37,0.0174
+Non-exempt,Waterford,8634,123,17,208,0,348,0.0403
+Non-exempt,Watertown,9096,206,24,134,0,364,0.04
+Non-exempt,West Hartford,26396,541,943,304,287,2075,0.0786
+Non-exempt,Westbrook,3937,140,8,13,24,185,0.047
+Non-exempt,Weston,3674,0,1,0,0,1,3.00E-04
+Non-exempt,Westport,10399,245,20,2,15,282,0.0271
+Non-exempt,Wethersfield,11677,625,127,216,0,968,0.0829
+Non-exempt,Willington,2637,160,2,37,0,199,0.0755
+Non-exempt,Wilton,6475,84,5,7,140,236,0.0364
+Non-exempt,Windsor,11767,154,282,379,26,841,0.0715
+Non-exempt,Windsor Locks,5429,137,178,182,0,497,0.0915
+Non-exempt,Wolcott,6276,312,3,121,0,436,0.0695
+Non-exempt,Woodbridge,3478,30,3,6,0,39,0.0112
+Non-exempt,Woodbury,4564,60,4,19,0,83,0.0182
+Non-exempt,Woodstock,3582,24,3,52,0,79,0.0221

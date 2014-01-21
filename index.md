@@ -56,7 +56,7 @@ Rural areas tend to have higher home ownership rates throughout the state, not s
 ![plot of chunk unnamed-chunk-2](assets/fig/unnamed-chunk-2.png) 
 
 
-Data on housing cost burden show the highest cost burdens in Hartford and some of the inner-ring suburbs, and the lowest costs relative to income in outer-ring and rural towns, particularly Suffield and Tolland. 
+Data on housing cost burden show the higher populations with high cost burdens in Hartford and some of the inner-ring suburbs, and the lowest costs relative to income in outer-ring and rural towns, particularly Suffield and Tolland. 
 
 ![plot of chunk unnamed-chunk-3](assets/fig/unnamed-chunk-3.png) 
 
@@ -66,7 +66,7 @@ Since the data is from the ACS, the margin of error can be high for small towns.
 ![plot of chunk unnamed-chunk-4](assets/fig/unnamed-chunk-4.png) 
 
 
-Housing cost generally appears to be associated with home-ownership rates; costs are lower in towns with higher home-ownership rates. 
+Housing cost burdens are generally associated with home-ownership rates - cost burdens are lower in towns with higher home-ownership rates. 
 
 ![plot of chunk unnamed-chunk-5](assets/fig/unnamed-chunk-5.png) 
 
@@ -76,6 +76,16 @@ Using 5-year estimates of census data, we can also make the same map by census t
 ![plot of chunk unnamed-chunk-6](assets/fig/unnamed-chunk-6.png) 
 
 
-While some projects have used data on the number of subsidized housing units (per 1000 residents) for Connecticut, this data is not readily available. It could likely be requested from CHFA if seen as important. 
+While some projects have used data on the number of subsidized housing units (per 1000 residents) for Connecticut, this data is not readily available at a detailed level. It could likely be requested from CHFA if seen as important. 
+
+DECD posts annual data on affordable housing units per town. In the Hartford region, only a few towns - Hartford and some urban periphery towns - have more than 10 percent of units classified as 'affordable.'
+
+![plot of chunk unnamed-chunk-7](assets/fig/unnamed-chunk-7.png) 
+
+
+In the region overall, the percent of affordable housing generally tracks poverty rates. 
+
+![plot of chunk unnamed-chunk-8](assets/fig/unnamed-chunk-8.png) 
+
 
 Additional breakouts of housing costs by other demographics (race, age, ethnicity) are available from the Census data.  
