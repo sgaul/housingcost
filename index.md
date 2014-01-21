@@ -83,9 +83,14 @@ DECD posts annual data on affordable housing units per town. In the Hartford reg
 ![plot of chunk unnamed-chunk-7](assets/fig/unnamed-chunk-7.png) 
 
 
-In the region overall, the percent of affordable housing generally tracks poverty rates. 
+The map looks like this: 
 
 ![plot of chunk unnamed-chunk-8](assets/fig/unnamed-chunk-8.png) 
+
+
+In the region overall, the percent of affordable housing generally tracks poverty rates. 
+
+![plot of chunk unnamed-chunk-9](assets/fig/unnamed-chunk-9.png) 
 
 
 Additional breakouts of housing costs by other demographics (race, age, ethnicity) are available from the Census data.  

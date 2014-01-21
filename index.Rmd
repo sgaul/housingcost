@@ -201,6 +201,28 @@ ggplot(data = appeals, aes(x = Percent.Affordable, y = Town)) +
   labs(x = "% affordable housing units") 
 ```
 
+The map looks like this: 
+
+```{r echo = FALSE, warning = FALSE, message = FALSE, fig.width = 10, comment = NA, tidy = F}
+library(classInt)
+jenks <- classIntervals(appeals$Percent.Affordable, 
+                        n=4, style="fisher")
+choropleth=merge(CTTowns, appeals, by.x = "id", by.y="Town")
+choropleth=choropleth[order(choropleth$order), ]
+choropleth$employment=cut(choropleth$Percent.Affordable, 
+                          breaks=jenks$brks,
+                          include.lowest=T, dig.lab = T)
+#Make the map
+ggplot(data = choropleth, aes(long, lat, group = group)) +
+  geom_polygon(aes(fill = Percent.Affordable)) + 
+  scale_x_continuous(breaks = NULL) +
+  scale_y_continuous(breaks = NULL) +
+  labs(x = NULL, y = NULL) + 
+  coord_equal() +
+  geom_polygon(data = CTTowns, colour = "grey", alpha = 0.5, fill = NA) +
+  theme_minimal() 
+```
+
 In the region overall, the percent of affordable housing generally tracks poverty rates. 
 
 ```{r echo = FALSE, warning = FALSE, message = FALSE, fig.width = 10, comment = NA, tidy = F}
