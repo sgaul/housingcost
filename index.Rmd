@@ -185,16 +185,16 @@ DECD posts annual data on affordable housing units per town. In the Hartford reg
 ```{r echo = FALSE, warning = FALSE, message = FALSE, fig.width = 10, comment = NA, tidy = F}
 appeals <- read.csv('../housingcost/appeals-list-2012.csv')
 
-#appeals <- subset(appeals, appeals$Town %in% levels(towns$Town))
+appeals <- subset(appeals, appeals$Town %in% levels(towns$Town))
 
 #appeals <- merge(appeals,towns, by = "Town")
 
-appeals <- merge(appeals, subset(gh, period == 2010), by.x = "Town", by.y = "city")
+#appeals <- merge(appeals, subset(gh, period == 2010), by.x = "Town", by.y = "city")
 
 appeals$Town <- reorder(appeals$Town, appeals$Percent.Affordable)
 
 ggplot(data = appeals, aes(x = Percent.Affordable, y = Town)) + 
-  geom_point() + 
+  geom_point(aes(colour = as.factor(Year))) + 
   geom_vline(xintercept = 0.1) + 
   scale_x_continuous(labels = percent) + 
   theme_minimal() +
@@ -209,7 +209,7 @@ jenks <- classIntervals(appeals$Percent.Affordable,
                         n=4, style="fisher")
 choropleth=merge(CTTowns, appeals, by.x = "id", by.y="Town")
 choropleth=choropleth[order(choropleth$order), ]
-choropleth$employment=cut(choropleth$Percent.Affordable, 
+choropleth$Percent.Affordable=cut(choropleth$Percent.Affordable, 
                           breaks=jenks$brks,
                           include.lowest=T, dig.lab = T)
 #Make the map
@@ -220,12 +220,19 @@ ggplot(data = choropleth, aes(long, lat, group = group)) +
   labs(x = NULL, y = NULL) + 
   coord_equal() +
   geom_polygon(data = CTTowns, colour = "grey", alpha = 0.5, fill = NA) +
-  theme_minimal() 
+  scale_fill_brewer(palette = "Purples", name = "% Affordable\nHousing") +
+  theme_minimal() + 
+  facet_wrap(~ Year, ncol = 3)
 ```
 
 In the region overall, the percent of affordable housing generally tracks poverty rates. 
 
 ```{r echo = FALSE, warning = FALSE, message = FALSE, fig.width = 10, comment = NA, tidy = F}
+
+appeals <- merge(subset(appeals, Year == 2010), 
+                 subset(gh, period == 2010), 
+                 by.x = "Town", by.y = "city")
+
 ggplot(data = appeals, aes(y = Percent.Affordable, x = poppovertyrate / 100)) + 
 #  geom_point() + 
   geom_text(aes(label = Town)) + 
