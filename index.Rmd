@@ -222,14 +222,14 @@ ggplot(data = choropleth, aes(long, lat, group = group)) +
   geom_polygon(data = CTTowns, colour = "grey", alpha = 0.5, fill = NA) +
   scale_fill_brewer(palette = "Purples", name = "% Affordable\nHousing") +
   theme_minimal() + 
-  facet_wrap(~ Year, ncol = 3)
+  facet_wrap(~ Year, ncol = 2)
 ```
 
 In the region overall, the percent of affordable housing generally tracks poverty rates. 
 
 ```{r echo = FALSE, warning = FALSE, message = FALSE, fig.width = 10, comment = NA, tidy = F}
 
-appeals <- merge(subset(appeals, Year == 2010), 
+appeals <- merge(subset(appeals, Year == 2012), 
                  subset(gh, period == 2010), 
                  by.x = "Town", by.y = "city")
 
